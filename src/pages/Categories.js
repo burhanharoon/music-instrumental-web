@@ -196,15 +196,7 @@ export default function Categories() {
 
 
 
-                <Stack
-                // width={[
-                //     "100%", // base
-                //     "50%", // 480px upwards
-                //     "25%", // 768 px upwards
-                //     "15%", // 992px upwards
-                // ]}
-                // direction={['column','column','row','row']}
-                >
+                <Stack>
                     <Button
                         size="md"
                         height="48px"
@@ -278,7 +270,6 @@ export default function Categories() {
                     <Text letterSpacing={1} fontWeight={600} align={'center'} fontSize='xl'>{searchResults}</Text>
                 </Box>
                 <Box className='d-flex flex-wrap justify-content-center'>
-
                     <Select mt={8} maxW="27rem" size="lg" onChange={changeOpotion} display={{ base: "block", md: 'none' }}>
                         <option value='All Instruments'>All Instruments</option>
                         <option value='Woodwind Instruments'>Woodwind Instruments</option>
