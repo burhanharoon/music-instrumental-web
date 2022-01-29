@@ -182,7 +182,7 @@ export default function Categories() {
 
     return (
         <div id="Categories">
-            <Box className='leftComponent' display={['none', "block"]} >
+            <Box className='leftComponent' display={['none', 'none', "block"]} >
 
                 <Stack spacing={6}>
                     <Heading
@@ -267,7 +267,7 @@ export default function Categories() {
                 </Stack>
             </Box>
 
-            <div className='rightComponent'>
+            <Box w="100%">
                 <div>
                     <Text fontWeight={800} letterSpacing={8} align={'center'} fontSize={["2xl", "3xl", '5xl']}>PLAY IT AGAIN TUNES</Text>
                 </div>
@@ -279,7 +279,7 @@ export default function Categories() {
                 </Box>
                 <Box className='d-flex flex-wrap justify-content-center'>
 
-                    <Select mt={8} maxW="27rem" size="lg" onChange={changeOpotion} display={["block", "none"]}>
+                    <Select mt={8} maxW="27rem" size="lg" onChange={changeOpotion} display={{ base: "block", md: 'none' }}>
                         <option value='All Instruments'>All Instruments</option>
                         <option value='Woodwind Instruments'>Woodwind Instruments</option>
                         <option value='Brass Instruments' >Brass Instruments</option>
@@ -301,8 +301,8 @@ export default function Categories() {
                         )
                     )}
                 </div>
-            </div>
-        </div>
+            </Box>
+        </div >
     )
 }
 
